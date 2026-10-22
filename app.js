@@ -158,9 +158,9 @@ document.querySelectorAll("[data-scratch-date]").forEach((panel) => {
   context.fillStyle = "#4d2b20";
   context.textAlign = "center";
   context.textBaseline = "middle";
-  context.font = '600 13px "Montserrat", Arial, sans-serif';
+  context.font = '600 13px "DM Sans", Arial, sans-serif';
   context.fillText("SCRATCH TO REVEAL", bounds.width / 2, bounds.height / 2 - 9);
-  context.font = '500 10px "Montserrat", Arial, sans-serif';
+  context.font = '500 10px "DM Sans", Arial, sans-serif';
   context.fillText("YOUR CELEBRATION DATE", bounds.width / 2, bounds.height / 2 + 16);
 
   let scratching = false;
