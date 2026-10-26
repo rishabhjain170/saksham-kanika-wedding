@@ -6,7 +6,7 @@
     <title>सक्षम एवं कनिका — मुद्रित निमंत्रण प्रारूप</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Devanagari:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Devanagari:wght@400;500;600;700&amp;family=Tiro+Devanagari+Hindi&amp;display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
     <script>document.documentElement.dataset.set = new URLSearchParams(location.search).get("set") || "all";</script>
   </head>
@@ -15,6 +15,7 @@
       <strong>विवाह निमंत्रण के पृष्ठ</strong>
       <span>सामान्य सेट में परिवार और २० नवम्बर का कार्यक्रम है। २१ नवम्बर का पृष्ठ अलग से जोड़ें।</span>
       <nav aria-label="पीडीएफ प्रारूप">
+        <a href="page-1-proof.pdf">पहला पृष्ठ · समीक्षा</a>
         <a href="proof.pdf">सामान्य सेट · २ पृष्ठ</a>
         <a href="wedding-insert.pdf">२१ नवम्बर · अलग पृष्ठ</a>
         <a href="selected-proof.pdf">पूरा सेट · ३ पृष्ठ</a>
@@ -23,37 +24,48 @@
 
     <main class="proofs" aria-label="सक्षम और कनिका के मुद्रित निमंत्रण का प्रारूप">
       <section class="sheet sheet--family" aria-label="परिवार परिचय पृष्ठ">
-        <div class="light-frame" aria-hidden="true"></div>
-        <div class="light-corner light-corner--tl" aria-hidden="true">❦</div>
-        <div class="light-corner light-corner--br" aria-hidden="true">❦</div>
+        <div class="family-floral-header" aria-hidden="true"></div>
+        <div class="family-photo-frame" aria-hidden="true"></div>
         <div class="family-content">
-          <p class="inside-invocation">॥ श्री आदिनाथाय नमः ॥</p>
-          <div class="inside-ornament" aria-hidden="true">✦</div>
-          <h2>सादर आमंत्रण</h2>
-          <p class="family-intro">श्री आदिनाथ भगवान एवं पूज्य बुजुर्गों के आशीर्वाद से<br />हम अपने प्रिय बच्चों के सगाई एवं दोपहर भोज में<br />आपको सपरिवार सादर आमंत्रित करते हैं।</p>
+          <svg class="family-jain-symbol" viewBox="0 0 90 108" role="img" aria-label="जैन अहिंसा प्रतीक">
+            <path d="M29 5H61L72 23L65 48L77 99H13L25 48L18 23Z" fill="none" stroke="currentColor" stroke-width="3"/>
+            <path d="M39 15h12m-6-6v12m-6 2v7h-7m19-7v7h7m-12 0v7h-7m7-7h7" fill="none" stroke="currentColor" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M30 67V54c0-3 5-3 5 0v10-18c0-4 6-4 6 0v17-20c0-4 6-4 6 0v20-17c0-4 6-4 6 0v18-11c0-3 6-3 6 0v20c0 9-6 16-16 16-9 0-16-7-16-16v-9c0-5 7-5 7 0v8" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="44" cy="73" r="9" fill="none" stroke="currentColor" stroke-width="2"/>
+            <circle cx="44" cy="73" r="3" fill="currentColor"/>
+          </svg>
+          <p class="family-invocation">श्री आदिनाथाय नमः</p>
+          <p class="family-grace">आदिनाथ प्रभु की असीम कृपा से</p>
+          <p class="family-elders">श्रीमती कौशल जैन एवं स्व. सुभाष चन्द्र जैन</p>
+          <p class="family-small">अपने प्रिय सुपौत्र</p>
+          <h2>चि. सक्षम जैन</h2>
+          <p class="family-relation">(सुपुत्र श्रीमती नीलम जैन एवं श्री प्रदीप जैन)</p>
+          <p class="family-address"><span>(मल्हीपुर निवासी)</span> <span>(पवन विहार सहारनपुर, मल्हीपुर रोड)</span></p>
+          <p class="family-and">एवं</p>
+          <h2>सौ. कनिका</h2>
+          <p class="family-relation">(सुपुत्री श्रीमती ममता गुप्ता एवं श्री राकेश कुमार गुप्ता)</p>
+          <p class="family-address">(नि. ग्रा. कंकरकुई सहारनपुर)</p>
 
-          <div class="family-rule" aria-hidden="true"><span></span>✦<span></span></div>
-          <div class="family-person">
-            <p class="family-label">वर पक्ष</p>
-            <h3>सक्षम</h3>
-            <p>श्रीमती कौशल एवं स्व. श्री सुखमल चन्द जैन के पौत्र</p>
-            <p>श्रीमती नीलम एवं श्री कमल प्रदीप जैन के सुपुत्र</p>
-            <small>पवन विहार, मल्हीपुर रोड, सहारनपुर</small>
+          <div class="family-invitation">
+            <p>आपको सादर आमंत्रित करते हैं।</p>
+            <p>आपकी गरिमामयी उपस्थिति अनिवार्य है।</p>
+            <p>कृपया वर वधू को अपना आशीर्वाद प्रदान करें।</p>
           </div>
-
-          <div class="family-join" aria-hidden="true">एवं</div>
-          <div class="family-person">
-            <p class="family-label">वधू पक्ष</p>
-            <h3>कनिका</h3>
-            <p>श्रीमती ममता एवं श्री राकेश कुमार गुप्ता की सुपुत्री</p>
-            <small>कोकरपुर</small>
+          <div class="family-manuhar">
+            <h3>बाल मनुहार</h3>
+            <blockquote>“मीठी मनुहार लेकर आई हूँ, भूल ना जाना आने को,<br />सक्षम मामू की शादी में, आशीर्वाद लुटाने को।”</blockquote>
+            <p>— अरीका जैन</p>
           </div>
-
           <div class="family-footer">
-            <p class="blessings">आशीर्वाद ही उपहार</p>
-            <p>सादर आमंत्रक</p>
-            <p class="hosts">कमल प्रदीप जैन · ऋषभ जैन · साक्षी जैन · आरिका जैन</p>
-            <p class="contact">संपर्क: +९१ ९९२७०१८९६३</p>
+            <div>
+              <h3>विनीत:</h3>
+              <p>कमल प्रदीप जैन (9927818963)</p>
+              <p>ऋषभ जैन - साक्षी जैन (8285481525)</p>
+            </div>
+            <div>
+              <h3>दर्शनाभिलाषी:</h3>
+              <p>जैन परिवार एवं समस्त रिश्तेदार</p>
+            </div>
           </div>
         </div>
         <p class="proof-mark">प्रारूप · मुद्रण से पहले विवरण जाँचें</p>

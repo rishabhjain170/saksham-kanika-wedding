@@ -6,6 +6,7 @@
   --ink: #3b1b29;
   --muted: #6b555a;
   --hindi: "Noto Serif Devanagari", "Nirmala UI", serif;
+  --hindi-display: "Tiro Devanagari Hindi", "Noto Serif Devanagari", serif;
 }
 
 * { box-sizing: border-box; }
@@ -21,33 +22,43 @@ body { margin: 0; color: var(--ink); font-family: var(--hindi); }
 
 /* 154 × 216 mm artwork has 3 mm bleed around the 148 × 210 mm A5 trim. */
 .sheet { position: relative; flex: none; width: 154mm; height: 216mm; overflow: hidden; background: var(--cream); box-shadow: 0 15px 40px rgba(33, 17, 25, .19); print-color-adjust: exact; -webkit-print-color-adjust: exact; }
-.sheet--family, .sheet--programme { background: radial-gradient(ellipse 80% 55% at 50% 48%, #fffbf3 0%, #f9f2e7 70%, #efe2d1 100%); }
+.sheet--family { background: #f9f3eb; }
+.sheet--programme { background: radial-gradient(ellipse 80% 55% at 50% 48%, #fffbf3 0%, #f9f2e7 70%, #efe2d1 100%); }
 .light-frame { position: absolute; inset: 8mm; border: .28mm solid #b78e54; pointer-events: none; }
 .light-frame::after { content: ""; position: absolute; inset: 1.5mm; border: .14mm solid rgba(166, 117, 69, .35); }
 .light-corner { position: absolute; color: rgba(153, 83, 88, .42); font: 25pt/1 Georgia, serif; }
 .light-corner--tl { top: 10mm; left: 12mm; }
 .light-corner--br { bottom: 10mm; right: 12mm; transform: rotate(180deg); }
 
-.family-rule { display: flex; align-items: center; justify-content: center; gap: 3mm; color: var(--gold); font-size: 9pt; }
-.family-rule span { width: 17mm; height: .2mm; background: currentColor; }
+.family-floral-header { position: absolute; inset: 0 0 auto; height: 44mm; background: url("floral-header.svg") center top / 100% 100% no-repeat; }
+.family-photo-frame { position: absolute; inset: 5mm 5.5mm 6.5mm; border: .25mm solid #7d4554; border-top: 0; pointer-events: none; }
+.family-jain-symbol { width: 12mm; height: 15mm; color: #6a2b42; }
+.family-content { position: relative; z-index: 1; display: flex; flex-direction: column; align-items: center; height: 100%; padding: 31mm 14mm 10mm; text-align: center; }
+.family-content p { margin: 0; }
+.family-invocation { color: #62273d; font: 600 10.5pt/1.35 var(--hindi); }
+.family-grace { margin-top: 4mm !important; font: 500 10.4pt/1.45 var(--hindi); }
+.family-elders { margin-top: 1.5mm !important; font: 600 11.8pt/1.45 var(--hindi); }
+.family-small { margin-top: 1.7mm !important; font: 500 9.5pt/1.35 var(--hindi); }
+.family-content h2 { margin: 1.4mm 0 1mm; color: #61243b; font: 400 28pt/1.28 var(--hindi-display); }
+.family-relation { font: 500 9.6pt/1.4 var(--hindi); }
+.family-address { margin-top: .8mm !important; color: #684755; font: 500 8.7pt/1.35 var(--hindi); }
+.family-address span { display: inline-block; }
+.family-and { margin-top: 1.4mm !important; color: #a27655; font: 500 11pt/1.25 var(--hindi); }
+.family-invitation { margin-top: 3.2mm; font: 500 10pt/1.48 var(--hindi); }
+.family-invitation p + p { margin-top: .8mm; }
+.family-manuhar { width: 100%; max-width: 118mm; margin-top: 8mm; padding-top: 4.5mm; border-top: .2mm solid #cfb8a8; color: #71354a; }
+.family-manuhar h3 { margin: 0 0 1.5mm; font: 600 12pt/1.35 var(--hindi); }
+.family-manuhar blockquote { margin: 0; font: 500 9.8pt/1.55 var(--hindi); }
+.family-manuhar p { margin-top: 1mm; font: 600 9pt/1.4 var(--hindi); }
+.family-footer { display: flex; justify-content: space-between; align-items: flex-start; gap: 8mm; width: 100%; margin-top: auto; color: #6b2d43; }
+.family-footer > div:first-child { flex: 1 1 65%; text-align: left; }
+.family-footer > div:last-child { flex: 1 1 35%; text-align: right; }
+.family-footer h3 { margin: 0 0 1.2mm; font: 600 10pt/1.4 var(--hindi); }
+.family-footer p { margin: 0 0 1mm; font: 500 9pt/1.4 var(--hindi); }
 
-.family-content, .programme-content { position: relative; z-index: 1; display: flex; flex-direction: column; align-items: center; height: 100%; padding: 13mm 17mm 16mm; text-align: center; }
+.programme-content { position: relative; z-index: 1; display: flex; flex-direction: column; align-items: center; height: 100%; padding: 13mm 17mm 16mm; text-align: center; }
 .inside-invocation { margin: 0; color: #986a32; font: 600 10.5pt/1.5 var(--hindi); }
 .inside-ornament { margin: 3mm 0 1mm; color: var(--gold); font-size: 10pt; }
-.family-content h2 { margin: 0; color: var(--wine); font: 600 22pt/1.5 var(--hindi); }
-.family-intro { margin: 3mm 0 0; color: var(--muted); font: 500 10.5pt/1.65 var(--hindi); }
-.family-rule { width: 100%; margin: 6mm 0 5mm; }
-.family-person { width: 100%; }
-.family-label { margin: 0; color: #956929; font: 600 9.5pt/1.4 var(--hindi); }
-.family-person h3 { margin: 1mm 0 2mm; color: var(--wine); font: 600 25pt/1.3 var(--hindi); }
-.family-person p:not(.family-label) { margin: 1mm 0; font: 500 10pt/1.55 var(--hindi); }
-.family-person small { display: block; margin-top: 2mm; color: var(--muted); font: 500 9.3pt/1.45 var(--hindi); }
-.family-join { margin: 4mm 0; color: var(--gold); font: 400 12pt/1.3 var(--hindi); }
-.family-footer { width: 100%; margin-top: auto; padding-top: 6mm; border-top: .2mm solid #d9c3a0; }
-.family-footer p { margin: 1mm 0; color: var(--muted); font: 500 9pt/1.45 var(--hindi); }
-.family-footer .blessings { margin: 0 0 3mm; color: var(--wine); font: 600 14pt/1.3 var(--hindi); }
-.family-footer .hosts { color: var(--ink); font-size: 9.2pt; }
-.family-footer .contact { margin-top: 2mm; color: var(--wine); font-weight: 600; }
 
 .programme-content { padding-top: 14mm; }
 .programme-kicker { margin: 7mm 0 0; color: #926727; font: 600 12pt/1.4 var(--hindi); }
@@ -73,6 +84,7 @@ body { margin: 0; color: var(--ink); font-family: var(--hindi); }
 .proof-mark { position: absolute; z-index: 2; bottom: 4.2mm; left: 0; right: 0; margin: 0; color: #987f76; font: 500 6pt/1 var(--hindi); text-align: center; }
 
 html[data-set="general"] .sheet--wedding,
+html[data-set="family"] .sheet:not(.sheet--family),
 html[data-set="insert"] .sheet:not(.sheet--wedding) { display: none; }
 
 @page { size: 154mm 216mm; margin: 0; }
@@ -83,8 +95,10 @@ html[data-set="insert"] .sheet:not(.sheet--wedding) { display: none; }
   .sheet { display: block; box-shadow: none; break-after: page; page-break-after: always; }
   .sheet:last-child { break-after: auto; page-break-after: auto; }
   html[data-set="general"] .sheet--sagai,
+  html[data-set="family"] .sheet--family,
   html[data-set="insert"] .sheet--wedding { break-after: auto; page-break-after: auto; }
   html[data-set="general"] .sheet--wedding,
+  html[data-set="family"] .sheet:not(.sheet--family),
   html[data-set="insert"] .sheet:not(.sheet--wedding) { display: none; }
 }
 @media screen and (max-width: 760px) { .proofs { flex-direction: column; align-items: center; } }
