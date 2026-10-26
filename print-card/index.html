@@ -6,7 +6,7 @@
     <title>सक्षम एवं कनिका — मुद्रित निमंत्रण प्रारूप</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Devanagari:wght@400;500;600;700&amp;family=Tiro+Devanagari+Hindi&amp;display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&amp;family=Noto+Serif+Devanagari:wght@400;500;600;700&amp;family=Tiro+Devanagari+Hindi&amp;display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
     <script>document.documentElement.dataset.set = new URLSearchParams(location.search).get("set") || "all";</script>
   </head>
@@ -16,6 +16,7 @@
       <span>सामान्य सेट में परिवार और २० नवम्बर का कार्यक्रम है। २१ नवम्बर का पृष्ठ अलग से जोड़ें।</span>
       <nav aria-label="पीडीएफ प्रारूप">
         <a href="page-1-proof.pdf">पहला पृष्ठ · समीक्षा</a>
+        <a href="page-2-proof.pdf">दूसरा पृष्ठ · समीक्षा</a>
         <a href="proof.pdf">सामान्य सेट · २ पृष्ठ</a>
         <a href="wedding-insert.pdf">२१ नवम्बर · अलग पृष्ठ</a>
         <a href="selected-proof.pdf">पूरा सेट · ३ पृष्ठ</a>
@@ -72,32 +73,54 @@
       </section>
 
       <section class="sheet sheet--programme sheet--sagai" aria-label="२० नवम्बर का सगाई और भोज कार्यक्रम">
-        <div class="light-frame" aria-hidden="true"></div>
-        <div class="light-corner light-corner--tl" aria-hidden="true">❦</div>
-        <div class="light-corner light-corner--br" aria-hidden="true">❦</div>
-        <div class="programme-content">
-          <p class="inside-invocation">॥ श्री आदिनाथाय नमः ॥</p>
-          <div class="inside-ornament" aria-hidden="true">✦</div>
-          <p class="programme-kicker">सक्षम एवं कनिका</p>
-          <h2>सगाई एवं दोपहर भोज</h2>
-          <p class="programme-intro">आप सपरिवार पधारकर इस शुभ अवसर की गरिमा बढ़ाएँ<br />और नवयुगल को अपना स्नेह एवं आशीर्वाद दें।</p>
+        <div class="sagai-paper-border" aria-hidden="true"></div>
+        <div class="sagai-corner sagai-corner--tl" aria-hidden="true"></div>
+        <div class="sagai-corner sagai-corner--br" aria-hidden="true"></div>
+        <div class="sagai-content">
+          <svg class="sagai-kalash" viewBox="0 0 100 112" aria-hidden="true">
+            <g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M33 45h34l-3 12 7 28-7 16H36l-7-16 7-28-3-12Zm-7 0h48v8H26zM34 97h32M36 103h28"/>
+              <path d="M50 44V20M50 30C36 27 30 18 32 8c11 1 18 8 18 22Zm0 0C64 27 70 18 68 8c-11 1-18 8-18 22ZM50 33C42 23 43 12 50 3c7 9 8 20 0 30ZM31 37c-9-3-15-10-16-19 10 1 17 7 20 17M69 37c9-3 15-10 16-19-10 1-17 7-20 17"/>
+              <path d="M44 67h12m-6-6v12m-6 1v6h-5m17-6v6h5" stroke-width="2.4"/>
+              <circle cx="38" cy="83" r="2" fill="currentColor"/><circle cx="62" cy="83" r="2" fill="currentColor"/>
+            </g>
+          </svg>
+          <p class="sagai-invocation">।। श्री महावीराय नमः ।।</p>
+          <p class="sagai-verse">मंगलम् भगवान् वीरो, मंगलम् गौतमो गणी।<br />मंगलम् कुन्दकुन्दाद्यो, जैन धर्मोऽस्तु मंगलम्।।</p>
+          <h2>Wedding Golden Moments</h2>
+          <p class="sagai-date">शुक्रवार, 20 नवम्बर 2026</p>
 
-          <div class="date-panel">
-            <strong>२०</strong>
-            <div><span>नवम्बर २०२६</span><small>शुक्रवार</small></div>
+          <div class="sagai-schedule" aria-label="20 नवम्बर का कार्यक्रम">
+            <div class="sagai-schedule-row"><strong>सगाई</strong><i aria-hidden="true"></i><span>प्रातः 11.00 बजे</span></div>
+            <div class="sagai-schedule-row"><strong>भोजन</strong><i aria-hidden="true"></i><span>दोपहर 12.00 बजे</span></div>
+            <div class="sagai-schedule-row"><strong>Ladies Sangeet</strong><i aria-hidden="true"></i><span>Sham 7 baje</span></div>
           </div>
 
-          <div class="programme-schedule" aria-label="२० नवम्बर का समय">
-            <div class="schedule-row"><span>सगाई</span><i aria-hidden="true"></i><strong>पूर्वाह्न ११:०० बजे</strong></div>
-            <div class="schedule-row"><span>दोपहर भोज</span><i aria-hidden="true"></i><strong>दोपहर १२:०० बजे</strong></div>
-          </div>
-
-          <div class="venue-panel">
-            <p>आयोजन स्थल</p>
+          <div class="sagai-venue">
+            <svg class="sagai-venue-ornament" viewBox="0 0 330 82" aria-hidden="true">
+              <g fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round">
+                <path d="M11 62h308M26 50c23-23 40-4 17 10 36 7 43-32 72-25 25 6 33 32 50 18 17 14 25-12 50-18 29-7 36 32 72 25-23-14-6-33 17-10"/>
+                <path d="M55 66c30-7 60 6 110-3 50 9 80-4 110 3M150 34h30l-3 19h-24l-3-19Zm-8 0h46M149 28h32l-16-13-16 13ZM165 14V5"/>
+                <circle cx="165" cy="5" r="3" fill="currentColor"/>
+              </g>
+            </svg>
+            <p>स्थान (Venue):</p>
             <h3>होटल ओएसिस</h3>
             <address>दिल्ली रोड, सहारनपुर</address>
           </div>
-          <p class="programme-closing">आपकी उपस्थिति हमारे लिए अनमोल है।</p>
+
+          <svg class="sagai-musicians" viewBox="0 0 300 95" aria-hidden="true">
+            <defs>
+              <g id="sagai-drummer" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 25c2-12 21-17 31-6l-3 7H15l-1-1Zm3 1c-1 13 5 22 14 22 9 0 15-10 13-22M9 53c9-6 16-7 23-5 10 1 16 4 20 11l-8 19H12L9 53Z"/>
+                <path d="M17 78C10 81 5 85 5 90h52c-5-9-13-11-22-12M13 54l24 18m2-18L21 72M44 59l24 9m-9-19 11 12"/>
+                <path d="M63 53c10-5 30-5 43 0l4 26c-15 7-34 7-49 0l2-26Zm0 0c4 8 39 8 43 0M62 79c5-8 42-8 48 0M75 57l-5 20m18-20v22m12-22 4 20"/>
+                <path d="M49 11c-4 7-1 13 5 17M52 63l13-13"/>
+              </g>
+            </defs>
+            <use href="#sagai-drummer" x="12" y="2"/>
+            <use href="#sagai-drummer" transform="translate(288 2) scale(-1 1)"/>
+          </svg>
         </div>
         <p class="proof-mark">प्रारूप · मुद्रण से पहले विवरण जाँचें</p>
       </section>
