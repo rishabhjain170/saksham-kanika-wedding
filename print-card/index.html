@@ -3,21 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>सक्षम एवं कनिका — विवाह निमंत्रण प्रारूप</title>
+    <title>सक्षम एवं कनिका — मुद्रित निमंत्रण प्रारूप</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=DM+Sans:wght@400;500;600;700&family=Noto+Serif+Devanagari:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Devanagari:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
+    <script>document.documentElement.dataset.set = new URLSearchParams(location.search).get("set") || "all";</script>
   </head>
   <body>
     <div class="screen-note">
-      <strong>विवाह निमंत्रण प्रारूप</strong>
-      <span>दो तरफ़ा ए५ कार्ड · ३ मि.मी. ब्लीड · समीक्षा हेतु</span>
-      <a href="proof.pdf">पीडीएफ प्रारूप खोलें</a>
+      <strong>विवाह निमंत्रण के पृष्ठ</strong>
+      <span>सामान्य सेट में आवरण, परिवार और २० नवम्बर का कार्यक्रम है। २१ नवम्बर का पृष्ठ अलग से जोड़ें।</span>
+      <nav aria-label="पीडीएफ प्रारूप">
+        <a href="proof.pdf">सामान्य सेट · ३ पृष्ठ</a>
+        <a href="wedding-insert.pdf">२१ नवम्बर · अलग पृष्ठ</a>
+        <a href="selected-proof.pdf">पूरा सेट · ४ पृष्ठ</a>
+      </nav>
     </div>
 
-    <main class="proofs" aria-label="दो तरफ़ा विवाह निमंत्रण कार्ड प्रारूप">
-      <section class="sheet sheet--front" aria-label="कार्ड का अगला भाग">
+    <main class="proofs" aria-label="सक्षम और कनिका के मुद्रित निमंत्रण का प्रारूप">
+      <section class="sheet sheet--cover" aria-label="आवरण पृष्ठ">
         <div class="grain" aria-hidden="true"></div>
         <div class="frame frame--outer" aria-hidden="true"></div>
         <div class="frame frame--inner" aria-hidden="true"></div>
@@ -25,9 +30,8 @@
         <div class="corner corner--tr" aria-hidden="true">✧</div>
         <div class="corner corner--bl" aria-hidden="true">✧</div>
         <div class="corner corner--br" aria-hidden="true">✧</div>
-
-        <div class="front-content">
-          <p class="invocation" lang="hi">॥ श्री आदिनाथाय नमः ॥</p>
+        <div class="cover-content">
+          <p class="cover-invocation">॥ श्री आदिनाथाय नमः ॥</p>
           <div class="lotus" aria-hidden="true">
             <svg viewBox="0 0 180 82" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M90 58C76 49 74 32 90 9c16 23 14 40 0 49Z"/>
@@ -36,67 +40,112 @@
               <path d="M24 68c41 7 91 7 132 0M45 76c29 4 61 4 90 0"/>
             </svg>
           </div>
-          <p class="front-kicker">शुभ विवाह</p>
-          <div class="front-divider" aria-hidden="true"><span></span>✦<span></span></div>
+          <p class="cover-kicker">स्नेह निमंत्रण</p>
+          <div class="ornament" aria-hidden="true"><span></span>✦<span></span></div>
           <h1><span>सक्षम</span><em>एवं</em><span>कनिका</span></h1>
-          <p class="front-message">दो परिवारों की इस मंगल बेला में<br />आप सपरिवार पधारकर नवयुगल को आशीर्वाद दें।</p>
-          <div class="front-date">
-            <span>२०</span><i>—</i><span>२१</span>
-            <small>नवम्बर २०२६</small>
-          </div>
-          <p class="front-place">सहारनपुर · उत्तर प्रदेश</p>
-          <div class="front-bottom" aria-hidden="true">✧ &nbsp; मंगल परिणय &nbsp; ✧</div>
+          <p class="cover-message">सगाई एवं दोपहर भोज के शुभ अवसर पर<br />आपकी स्नेहिल उपस्थिति एवं आशीर्वाद की अभिलाषा है।</p>
+          <p class="cover-place">सहारनपुर · उत्तर प्रदेश</p>
+          <p class="cover-bottom">✧ &nbsp; मंगल शुभकामनाएँ &nbsp; ✧</p>
         </div>
       </section>
 
-      <section class="sheet sheet--back" aria-label="कार्ड का पिछला भाग">
-        <div class="back-frame" aria-hidden="true"></div>
-        <div class="back-content">
-          <p class="back-invocation" lang="hi">॥ श्री आदिनाथाय नमः ॥</p>
-          <h2 lang="hi">सादर आमंत्रण</h2>
-          <p class="back-intro">श्री आदिनाथ भगवान एवं पूज्य बुजुर्गों के आशीर्वाद से<br />हम आपको अपने प्रिय बच्चों के विवाहोत्सव में सपरिवार आमंत्रित करते हैं।</p>
-          <div class="family-intro">
-            <div class="family-person">
-              <h3>सक्षम</h3>
-              <p>श्रीमती कौशल एवं स्व. श्री सुखमल चन्द जैन के पौत्र</p>
-              <p>श्रीमती नीलम एवं श्री कमल प्रदीप जैन के सुपुत्र</p>
-              <small>पवन विहार, मल्हीपुर रोड</small>
-            </div>
-            <div class="family-join" aria-hidden="true">एवं</div>
-            <div class="family-person">
-              <h3>कनिका</h3>
-              <p>श्रीमती ममता एवं श्री राकेश कुमार गुप्ता की सुपुत्री</p>
-              <small>कोकरपुर</small>
-            </div>
+      <section class="sheet sheet--family" aria-label="परिवार परिचय पृष्ठ">
+        <div class="light-frame" aria-hidden="true"></div>
+        <div class="light-corner light-corner--tl" aria-hidden="true">❦</div>
+        <div class="light-corner light-corner--br" aria-hidden="true">❦</div>
+        <div class="family-content">
+          <p class="inside-invocation">॥ श्री आदिनाथाय नमः ॥</p>
+          <div class="inside-ornament" aria-hidden="true">✦</div>
+          <h2>सादर आमंत्रण</h2>
+          <p class="family-intro">श्री आदिनाथ भगवान एवं पूज्य बुजुर्गों के आशीर्वाद से<br />हम अपने प्रिय बच्चों के सगाई एवं दोपहर भोज में<br />आपको सपरिवार सादर आमंत्रित करते हैं।</p>
+
+          <div class="family-rule" aria-hidden="true"><span></span>✦<span></span></div>
+          <div class="family-person">
+            <p class="family-label">वर पक्ष</p>
+            <h3>सक्षम</h3>
+            <p>श्रीमती कौशल एवं स्व. श्री सुखमल चन्द जैन के पौत्र</p>
+            <p>श्रीमती नीलम एवं श्री कमल प्रदीप जैन के सुपुत्र</p>
+            <small>पवन विहार, मल्हीपुर रोड, सहारनपुर</small>
           </div>
 
-          <div class="events-heading"><span></span><b>विवाह कार्यक्रम</b><span></span></div>
-          <div class="event-list">
-            <section class="print-event" aria-labelledby="event-one-title">
-              <div class="event-date"><strong>२०</strong><span>नवम्बर<br />शुक्रवार</span></div>
-              <div class="event-detail">
-                <h3 id="event-one-title">सगाई एवं दोपहर भोज</h3>
-                <p>सगाई: पूर्वाह्न ११:०० बजे · भोज: दोपहर १२:०० बजे</p>
-                <address>होटल ओएसिस, दिल्ली रोड, सहारनपुर</address>
-              </div>
-            </section>
-            <section class="print-event" aria-labelledby="event-two-title">
-              <div class="event-date"><strong>२१</strong><span>नवम्बर<br />शनिवार</span></div>
-              <div class="event-detail">
-                <h3 id="event-two-title">बारात स्वागत एवं विवाह भोज</h3>
-                <p>बारात स्वागत: सायं ७:०० बजे · भोज: रात्रि ८:०० बजे</p>
-                <address>फुलवारी गार्डन, दिल्ली रोड, सहारनपुर</address>
-              </div>
-            </section>
+          <div class="family-join" aria-hidden="true">एवं</div>
+          <div class="family-person">
+            <p class="family-label">वधू पक्ष</p>
+            <h3>कनिका</h3>
+            <p>श्रीमती ममता एवं श्री राकेश कुमार गुप्ता की सुपुत्री</p>
+            <small>कोकरपुर</small>
           </div>
 
-          <div class="back-footer">
+          <div class="family-footer">
             <p class="blessings">आशीर्वाद ही उपहार</p>
-            <p class="wishes">सादर आमंत्रक<br /><strong>कमल प्रदीप जैन</strong> · ऋषभ जैन · साक्षी जैन · आरिका जैन</p>
-            <p class="phone">संपर्क: +९१ ९९२७०१८९६३</p>
+            <p>सादर आमंत्रक</p>
+            <p class="hosts">कमल प्रदीप जैन · ऋषभ जैन · साक्षी जैन · आरिका जैन</p>
+            <p class="contact">संपर्क: +९१ ९९२७०१८९६३</p>
           </div>
         </div>
-        <p class="proof-mark">प्रारूप · मुद्रण से पहले सभी विवरण जाँचें</p>
+        <p class="proof-mark">प्रारूप · मुद्रण से पहले विवरण जाँचें</p>
+      </section>
+
+      <section class="sheet sheet--programme sheet--sagai" aria-label="२० नवम्बर का सगाई और भोज कार्यक्रम">
+        <div class="light-frame" aria-hidden="true"></div>
+        <div class="light-corner light-corner--tl" aria-hidden="true">❦</div>
+        <div class="light-corner light-corner--br" aria-hidden="true">❦</div>
+        <div class="programme-content">
+          <p class="inside-invocation">॥ श्री आदिनाथाय नमः ॥</p>
+          <div class="inside-ornament" aria-hidden="true">✦</div>
+          <p class="programme-kicker">सक्षम एवं कनिका</p>
+          <h2>सगाई एवं दोपहर भोज</h2>
+          <p class="programme-intro">आप सपरिवार पधारकर इस शुभ अवसर की गरिमा बढ़ाएँ<br />और नवयुगल को अपना स्नेह एवं आशीर्वाद दें।</p>
+
+          <div class="date-panel">
+            <strong>२०</strong>
+            <div><span>नवम्बर २०२६</span><small>शुक्रवार</small></div>
+          </div>
+
+          <div class="programme-schedule" aria-label="२० नवम्बर का समय">
+            <div class="schedule-row"><span>सगाई</span><i aria-hidden="true"></i><strong>पूर्वाह्न ११:०० बजे</strong></div>
+            <div class="schedule-row"><span>दोपहर भोज</span><i aria-hidden="true"></i><strong>दोपहर १२:०० बजे</strong></div>
+          </div>
+
+          <div class="venue-panel">
+            <p>आयोजन स्थल</p>
+            <h3>होटल ओएसिस</h3>
+            <address>दिल्ली रोड, सहारनपुर</address>
+          </div>
+          <p class="programme-closing">आपकी उपस्थिति हमारे लिए अनमोल है।</p>
+        </div>
+        <p class="proof-mark">प्रारूप · मुद्रण से पहले विवरण जाँचें</p>
+      </section>
+
+      <section class="sheet sheet--programme sheet--wedding" aria-label="२१ नवम्बर का अलग विवाह कार्यक्रम पृष्ठ">
+        <div class="light-frame" aria-hidden="true"></div>
+        <div class="light-corner light-corner--tl" aria-hidden="true">❦</div>
+        <div class="light-corner light-corner--br" aria-hidden="true">❦</div>
+        <div class="programme-content">
+          <p class="inside-invocation">॥ श्री आदिनाथाय नमः ॥</p>
+          <div class="inside-ornament" aria-hidden="true">✦</div>
+          <p class="programme-kicker">सक्षम एवं कनिका</p>
+          <h2>बारात स्वागत एवं विवाह भोज</h2>
+          <p class="programme-intro">इस मंगल अवसर पर आपकी गरिमामयी उपस्थिति<br />एवं नवयुगल के लिए आशीर्वाद की अभिलाषा है।</p>
+
+          <div class="date-panel">
+            <strong>२१</strong>
+            <div><span>नवम्बर २०२६</span><small>शनिवार</small></div>
+          </div>
+
+          <div class="programme-schedule" aria-label="२१ नवम्बर का समय">
+            <div class="schedule-row"><span>बारात स्वागत</span><i aria-hidden="true"></i><strong>सायं ७:०० बजे</strong></div>
+            <div class="schedule-row"><span>विवाह भोज</span><i aria-hidden="true"></i><strong>रात्रि ८:०० बजे</strong></div>
+          </div>
+
+          <div class="venue-panel">
+            <p>आयोजन स्थल</p>
+            <h3>फुलवारी गार्डन</h3>
+            <address>दिल्ली रोड, सहारनपुर</address>
+          </div>
+          <p class="programme-closing">सादर प्रतीक्षारत — जैन एवं गुप्ता परिवार</p>
+        </div>
+        <p class="proof-mark">प्रारूप · मुद्रण से पहले विवरण जाँचें</p>
       </section>
     </main>
   </body>

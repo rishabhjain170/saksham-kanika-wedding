@@ -1,7 +1,15 @@
-# सक्षम एवं कनिका — कार्ड प्रारूप
+# सक्षम एवं कनिका — मुद्रित निमंत्रण प्रारूप
 
-`proof.pdf` is a **review proof**, not the final file to send to a print shop. It has two pages: the front and back of a flat, two-sided A5 portrait card. Each PDF page is 154 × 216 mm, including 3 mm bleed around the 148 × 210 mm trimmed card. The main text and border sit well inside the trim area.
+This folder contains **Hindi-only, A5 portrait review proofs** for two physical invitation sets:
 
-The gold color in this PDF is printed color, not metallic foil. The PDF was made in browser RGB color; ask the chosen printer to confirm its required color profile, duplex orientation, and bleed specification before production. The final proof mark will be removed after the wording is approved.
+| File | Sheets | Give to |
+| --- | ---: | --- |
+| `proof.pdf` | 3 | All invited guests: cover, family details, and 20 November sagai and lunch |
+| `wedding-insert.pdf` | 1 | Selected guests only: 21 November barat welcome and wedding dinner |
+| `selected-proof.pdf` | 4 | Review copy showing the three general sheets plus the separate insert |
 
-Please review the Devanagari spellings of all names and places, the event times, the venue names and addresses, and the contact number. The card includes only the two confirmed celebrations; it does not state a wedding ceremony time.
+Do not include `wedding-insert.pdf` or its printed sheet in the general card set. The general cover and family page invite guests specifically to the sagai and lunch; the 21 November date appears only on the separate insert. The public digital invitation is unchanged.
+
+Each PDF page is 154 × 216 mm, including 3 mm bleed around an A5 (148 × 210 mm) trim. Text and border sit inside the trim area. These are review proofs, with a small `प्रारूप` mark on the inside sheets. The browser-generated PDF uses RGB print color; its gold is a printed color, not metallic foil. Before production, confirm the chosen printer's color profile, bleed, finishing, and whether the sheets will be bound or supplied loose. Remove the proof mark after wording approval.
+
+Please review Devanagari spellings of all names and places, the event times, venue names and addresses, and the contact number. Only the confirmed event times are printed; no wedding ceremony time is stated.
