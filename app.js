@@ -15,6 +15,7 @@ const englishCopy = [
   [".gate-prompt", ["Touch the seal to open your invitation"]],
   [".site-nav a", ["Family", "Events"]],
   [".header-date", ["20–21 November 2026"]],
+  [".hero__eyebrow", ["With the infinite grace of Lord Adinath"]],
   [".hero__name", ["Saksham", "Kanika"]],
   [".hero__message", ["With joy in our hearts, we invite you to celebrate the wedding of Saksham and Kanika. Your presence and blessings will make this occasion truly special."]],
   [".hero__details > span:not(.hero__details-separator)", [
