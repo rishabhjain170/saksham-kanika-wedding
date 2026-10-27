@@ -14,19 +14,13 @@ const englishCopy = [
   [".wax-seal .sr-only", ["Open the invitation"]],
   [".gate-prompt", ["Touch the seal to open your invitation"]],
   [".site-nav a", ["Family", "Events"]],
-  [".header-date", ["20–21 November 2026"]],
   [".hero__eyebrow", ["With the infinite grace of Lord Adinath"]],
   [".hero__name", ["Saksham", "Kanika"]],
-  [".hero__message", ["With joy in our hearts, we invite you to celebrate the wedding of Saksham and Kanika. Your presence and blessings will make this occasion truly special."]],
-  [".hero__details > span:not(.hero__details-separator)", [
-    '<i class="fa-regular fa-calendar" aria-hidden="true"></i> 20 &amp; 21 November 2026',
-    '<i class="fa-solid fa-location-dot" aria-hidden="true"></i> Saharanpur, Uttar Pradesh'
-  ]],
+  [".hero__message", ["We warmly invite you to celebrate their wedding. We look forward to your gracious presence and blessings."]],
   [".hero .button--gold", ['View the celebrations <i class="fa-solid fa-arrow-down" aria-hidden="true"></i>']],
   [".hero__scroll-cue", ["<span></span> Scroll to explore"]],
   [".countdown-panel .section-kicker", ["Counting down to the celebration"]],
   ["#countdown-title", ["Until the engagement"]],
-  [".countdown-panel__intro > p:last-child", ["20 November 2026 · 10:00 AM"]],
   [".countdown__unit span", ["Days", "Hours", "Minutes", "Seconds"]],
   [".families .section-kicker", ["With our families' blessings"]],
   ["#families-title", ["A heartfelt invitation"]],
@@ -62,8 +56,8 @@ const englishCopy = [
   [".site-footer__message", ["May the music of celebration fill the air;<br />Arika can't wait to welcome you to her Saksham Mamu's wedding."]],
   [".well-wishers > p:first-child", ["With warm regards"]],
   [".well-wishers li a", [
-    "Kamal Pradeep Jain <span>· 9927818963</span>",
-    "Sakshi &amp; Rishabh Jain <span>· 8285481525</span>"
+    "Kamal Pradeep Jain <span>9927818963</span>",
+    "Sakshi &amp; Rishabh Jain <span>8285481525</span>"
   ]],
   [".well-wishers__regards", ["With love · Jain family, Malhipur"]],
   [".site-footer__copyright", ["20–21 November 2026 · Saharanpur"]]
@@ -79,7 +73,6 @@ const englishAria = [
   ["#invite-gate", ["Open the wedding invitation"]],
   [".brand", ["Saksham and Kanika, back to top"]],
   [".site-nav", ["Main navigation"]],
-  [".hero__details", ["Wedding dates and location"]],
   [".countdown", ["Time until the engagement"]],
   [".scratch-date__answer", ["Friday, 20 November 2026", "Saturday, 21 November 2026"]],
   [".scratch-date__canvas", ["Scratch or press Enter to reveal 20 November", "Scratch or press Enter to reveal 21 November"]],

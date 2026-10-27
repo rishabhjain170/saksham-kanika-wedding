@@ -192,7 +192,6 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .language-toggle { flex: 0 0 auto; min-height: 38px; padding: 5px 12px; border: 1px solid rgba(212, 175, 55, 0.65); border-radius: 999px; background: rgba(34, 10, 41, 0.72); color: var(--gold-light); font: 700 0.75rem/1.2 var(--font-body); cursor: pointer; transition: background 200ms ease, color 200ms ease; }
 .language-toggle:hover, .language-toggle:focus-visible { background: var(--gold); color: #1d0b1f; }
 .language-toggle--gate { position: absolute; z-index: 10; top: 32px; right: 32px; }
-.header-date { color: var(--gold-light); font: 600 0.8rem/1.4 var(--font-body); white-space: nowrap; }
 
 .hero {
   position: relative;
@@ -229,9 +228,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .hero__name { white-space: nowrap; }
 .hero h1 .hero__ampersand { color: var(--gold-light); font: 400 0.77em/1 var(--font-script); letter-spacing: 0; transform: translateY(0.08em); }
 .hero__message { max-width: 590px; margin: 0 auto; color: var(--muted); font-size: clamp(0.91rem, 1.5vw, 1.05rem); line-height: 1.8; }
-.hero__details { display: flex; align-items: center; justify-content: center; gap: 25px; width: max-content; max-width: 100%; margin: 33px auto 34px; padding: 15px 24px; border-block: 1px solid var(--line); color: var(--cream); font-size: 0.8rem; letter-spacing: 0.04em; }
-.hero__details i { margin-right: 8px; color: var(--gold); }
-.hero__details-separator { width: 1px; height: 22px; background: var(--line); }
+.hero__content > .button { margin-top: 34px; }
 .hero__ornament { position: absolute; z-index: 1; top: 46%; color: rgba(212, 175, 55, 0.35); font-size: clamp(2rem, 5vw, 4.5rem); }
 .hero__ornament--left { left: 7%; }
 .hero__ornament--right { right: 7%; }
@@ -248,7 +245,6 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .countdown-section { position: relative; z-index: 2; margin-top: -31px; }
 .countdown-panel { display: grid; grid-template-columns: minmax(250px, 1fr) minmax(450px, 1.35fr); align-items: center; gap: 40px; padding: 38px 53px; }
 .countdown-panel__intro h2 { margin: 8px 0 9px; font: 500 clamp(2rem, 3vw, 2.7rem)/1.4 var(--font-display); }
-.countdown-panel__intro > p:last-child { margin: 0; color: var(--muted); font-size: 0.9rem; }
 .countdown { display: flex; align-items: stretch; justify-content: space-between; gap: 10px; }
 .countdown__unit { position: relative; display: flex; flex: 1; flex-direction: column; align-items: center; min-width: 0; padding-inline: 5px; }
 .countdown__unit + .countdown__unit::before { content: ""; position: absolute; left: -5px; top: 14px; height: 58px; border-left: 1px solid var(--line); }
@@ -308,14 +304,15 @@ html[lang="en"] .scratch-date::before { content: "Auspicious date"; }
 .site-footer__inner { position: relative; z-index: 1; padding-top: 75px; padding-bottom: 44px; }
 .site-footer h2 { margin: 8px 0 9px; color: var(--gold-light); font: 500 clamp(2.6rem, 5vw, 4.2rem)/1.5 var(--font-display); }
 .site-footer__message { margin: 0; color: var(--muted); font-size: 0.91rem; }
-.well-wishers { margin: 45px auto 0; padding: 29px 0; max-width: 740px; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
-.well-wishers p { margin: 0 0 18px; color: var(--gold-light); font-size: 0.85rem; font-weight: 700; }
+.well-wishers { margin: 45px auto 0; padding: 35px 0; max-width: 820px; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.well-wishers p { margin: 0 0 20px; color: var(--gold-light); font-size: 1.12rem; font-weight: 700; }
 .well-wishers ul { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 13px 25px; margin: 0; padding: 0; list-style: none; }
-.well-wishers li { font-size: 0.91rem; }
+.well-wishers li { font-size: clamp(1.08rem, 2vw, 1.24rem); line-height: 1.7; }
 .well-wishers li + li::before { content: "✦"; margin-right: 25px; color: var(--gold); font-size: 0.47rem; vertical-align: middle; }
 .well-wishers a { text-decoration: none; transition: color 200ms ease; }
 .well-wishers a span { color: var(--muted); }
-.well-wishers .well-wishers__regards { margin: 22px 0 0; color: var(--muted); }
+.well-wishers a span::before { content: " · "; }
+.well-wishers .well-wishers__regards { margin: 26px 0 0; color: var(--cream); font-size: 1.12rem; }
 .site-footer__monogram { margin: 39px 0 5px; font: 500 1.8rem/1.2 var(--font-display); }
 .site-footer__copyright { margin: 0; color: var(--muted); font-size: 0.75rem; }
 .music-toggle {
@@ -352,7 +349,6 @@ html[lang="en"] .hero h1 { line-height: 1.1; }
 html[lang="en"] .family-card h3, html[lang="en"] .event-card h3 { line-height: 1.15; }
 
 @media (max-width: 900px) {
-  .header-date { display: none; }
   .countdown-panel { grid-template-columns: 1fr; gap: 25px; text-align: center; }
   .countdown-panel__intro { max-width: 490px; margin: auto; }
   .family-card { padding-inline: 26px; }
@@ -381,8 +377,7 @@ html[lang="en"] .family-card h3, html[lang="en"] .event-card h3 { line-height: 1
   .hero__ornament { display: none; }
   .hero h1 { flex-direction: column; align-items: center; gap: 0; margin: 13px 0 15px; font-size: clamp(3.3rem, 12vw, 5.1rem); line-height: 1.2; }
   .hero h1 .hero__ampersand { font-size: 0.78em; line-height: 0.7; transform: translateY(0.04em); }
-  .hero__details { flex-direction: column; gap: 11px; margin: 23px auto 26px; padding: 12px 15px; font-size: 0.72rem; }
-  .hero__details-separator { width: 30px; height: 1px; }
+  .hero__content > .button { margin-top: 27px; }
   .hero__scroll-cue { bottom: 43px; }
   .countdown-section { margin-top: -18px; }
   .countdown-panel { padding: 29px 20px 31px; }
@@ -405,6 +400,8 @@ html[lang="en"] .family-card h3, html[lang="en"] .event-card h3 { line-height: 1
   .site-footer__inner { padding-top: 62px; }
   .well-wishers ul { flex-direction: column; gap: 11px; }
   .well-wishers li + li::before { display: none; }
+  .well-wishers a span { display: block; }
+  .well-wishers a span::before { display: none; }
   .invite-gate { padding: 8px; }
   .invite-gate::after { inset: 8px; }
   .gate-inner { width: calc(100vw - 18px); height: calc(100svh - 18px); }
