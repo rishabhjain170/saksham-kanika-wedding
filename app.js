@@ -15,9 +15,9 @@ let invitationOpened = false;
 function syncMusicControl() {
   const playing = !music.paused && !music.ended;
   musicToggle.setAttribute("aria-pressed", String(playing));
-  musicToggle.setAttribute("aria-label", playing ? "Pause background music" : "Play background music");
+  musicToggle.setAttribute("aria-label", playing ? "संगीत रोकें" : "संगीत चलाएँ");
   musicToggle.querySelector("i").className = playing ? "fa-solid fa-volume-high" : "fa-solid fa-volume-xmark";
-  musicToggle.querySelector("span").textContent = playing ? "Music on" : "Music off";
+  musicToggle.querySelector("span").textContent = playing ? "संगीत चालू" : "संगीत बंद";
 }
 
 async function playMusic() {
@@ -81,7 +81,7 @@ openButton.addEventListener("click", () => {
   }
 });
 
-const weddingStart = new Date("2026-11-20T11:00:00+05:30").getTime();
+const weddingStart = new Date("2026-11-20T10:00:00+05:30").getTime();
 const clockFields = {
   days: document.getElementById("days"),
   hours: document.getElementById("hours"),
@@ -104,13 +104,13 @@ function updateCountdown() {
   }
 
   if (remaining === 0) {
-    countdownAnnouncement.textContent = "The celebrations have begun.";
+    countdownAnnouncement.textContent = "मांगलिक कार्यक्रम आरम्भ हो गए हैं।";
     return;
   }
 
   const currentMinute = Math.floor(totalSeconds / 60);
   if (currentMinute !== lastAnnouncedMinute) {
-    countdownAnnouncement.textContent = `${days} days, ${hours} hours and ${minutes} minutes until the first celebration.`;
+    countdownAnnouncement.textContent = `सगाई तक ${days} दिन, ${hours} घंटे और ${minutes} मिनट शेष हैं।`;
     lastAnnouncedMinute = currentMinute;
   }
 
@@ -158,10 +158,10 @@ document.querySelectorAll("[data-scratch-date]").forEach((panel) => {
   context.fillStyle = "#4d2b20";
   context.textAlign = "center";
   context.textBaseline = "middle";
-  context.font = '600 13px "DM Sans", Arial, sans-serif';
-  context.fillText("SCRATCH TO REVEAL", bounds.width / 2, bounds.height / 2 - 9);
-  context.font = '500 10px "DM Sans", Arial, sans-serif';
-  context.fillText("YOUR CELEBRATION DATE", bounds.width / 2, bounds.height / 2 + 16);
+  context.font = '600 15px "Noto Serif Devanagari", serif';
+  context.fillText("शुभ तिथि देखें", bounds.width / 2, bounds.height / 2 - 9);
+  context.font = '500 11px "Noto Serif Devanagari", serif';
+  context.fillText("सुनहरी परत खुरचें", bounds.width / 2, bounds.height / 2 + 16);
 
   let scratching = false;
   let lastPoint = null;
@@ -169,7 +169,7 @@ document.querySelectorAll("[data-scratch-date]").forEach((panel) => {
   function revealDate() {
     if (panel.classList.contains("is-revealed")) return;
     panel.classList.add("is-revealed");
-    shortcut.textContent = "Date revealed";
+    shortcut.textContent = "तिथि दिखाई गई";
     shortcut.disabled = true;
     canvas.tabIndex = -1;
     canvas.setAttribute("aria-hidden", "true");
