@@ -347,6 +347,7 @@ html[lang="en"] .scratch-date::before { content: "Auspicious date"; }
 .music-toggle i { font-size: 0.84rem; }
 
 html[lang="en"] { --font-display: "Cormorant Garamond", Georgia, serif; --font-body: "DM Sans", Arial, sans-serif; }
+html[lang="en"] [lang="hi"] { font-family: "Noto Serif Devanagari", Georgia, serif; }
 html[lang="en"] .hero h1 { line-height: 1.1; }
 html[lang="en"] .family-card h3, html[lang="en"] .event-card h3 { line-height: 1.15; }
 

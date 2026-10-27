@@ -11,12 +11,10 @@ let currentLanguage = "hi";
 
 // Hindi remains the source copy in the HTML, so the invitation is readable without JS.
 const englishCopy = [
-  [".gate-kicker, .invocation", ["Shri Adinathay Namah", "Shri Adinathay Namah"]],
   [".wax-seal .sr-only", ["Open the invitation"]],
   [".gate-prompt", ["Touch the seal to open your invitation"]],
   [".site-nav a", ["Family", "Events"]],
   [".header-date", ["20–21 November 2026"]],
-  [".hero__eyebrow", ["With the infinite grace of Lord Adinath"]],
   [".hero__name", ["Saksham", "Kanika"]],
   [".hero__message", ["With joy in our hearts, we invite you to celebrate the wedding of Saksham and Kanika. Your presence and blessings will make this occasion truly special."]],
   [".hero__details > span:not(.hero__details-separator)", [
@@ -31,7 +29,6 @@ const englishCopy = [
   [".countdown__unit span", ["Days", "Hours", "Minutes", "Seconds"]],
   [".families .section-kicker", ["With our families' blessings"]],
   ["#families-title", ["A heartfelt invitation"]],
-  [".family-verse", ["Salutations to the Arihants, Siddhas, Acharyas, Upadhyayas and Sadhus.<br />Salutations to the Jain temple, sacred image, scriptures and faith."]],
   [".family-card__label", ["Groom's family", "Bride's family"]],
   [".family-card h3", ["Saksham Jain", "Kanika"]],
   [".family-card__detail span", ["Grandparents", "Parents", "Parents"]],
@@ -45,7 +42,6 @@ const englishCopy = [
     '<i class="fa-solid fa-location-dot" aria-hidden="true"></i> Kankarkui, Saharanpur'
   ]],
   [".family-invitation", ["Please grace the occasion and bless the couple as they begin their life together."]],
-  [".celebrations .section-kicker", ["May the blessings of the twenty-four Tirthankaras bring joy and remove every obstacle."]],
   ["#celebrations-title", ["Wedding celebrations"]],
   [".celebrations .section-heading > p:not(.section-kicker)", ["Scratch the golden cards to reveal the dates."]],
   [".event-card__topline span", ["01 / Friday", "Hotel The Oasis", "02 / Saturday", "Wedding day"]],
